@@ -1,5 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-
+const API_BASE_URL = 'https://surakshanet-1jjx.onrender.com';
 export async function fetchUserProfile() {
   const res = await fetch(`${API_BASE_URL}/api/user/profile`);
   if (!res.ok) throw new Error('Failed to fetch user profile');
